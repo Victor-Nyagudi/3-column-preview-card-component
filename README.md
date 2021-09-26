@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshots/3-column-preview-card-fullscreen)
+![](./screenshots/3-column-preview-card-fullscreen.png)
 
 I've included 4 screenshots in the `/screenshots` folder: mobile, tablet, desktop, and fullscreen.
 
