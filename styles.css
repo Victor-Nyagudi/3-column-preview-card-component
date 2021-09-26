@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%); 
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* paragraphs */
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+
+    /* backgrounds, headings, titles */
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 0;
+    font-weight: 400;
+    color: var(--transparent-white);
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: var(--very-light-gray);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.content {
+    margin: 5em 0;
+}
+
+.preview-card {
+    padding: 3em;
+}
+
+.preview-card--sedans {
+    background-color: var(--bright-orange);
+    border-radius: 8px 8px 0 0;
+}
+
+.preview-card--suvs {
+    background-color: var(--dark-cyan);
+}
+
+.preview-card--luxury {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 0 8px 8px;
+}
+
+.preview-card__title {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.preview-card__text {
+    line-height: 1.7;
+}
+
+.btn {
+    background-color: var(--very-light-gray);
+    padding: .75em 2em;
+    border-radius: 32px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: .8em;
+    border: 2px solid var(--transparent-white);
+}
+
+.btn:hover {
+    background-color: inherit;
+    color: inherit;
+}
+
+.btn--sedans {
+    color: var(--bright-orange);
+}
+
+.btn--suvs {
+    color: var(--dark-cyan);
+}
+
+.btn--luxury {
+    color: var(--very-dark-cyan);
+}
+
+@media (min-width:860px) {
+    body {
+        height: 100vh;       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        max-width: 1026px;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .content {
+        margin: 0;
+    }
+
+    .preview-card--sedans {
+        border-radius: 8px 0 0 8px;
+    }
+
+    .preview-card--luxury {
+        border-radius: 0 8px 8px 0;
+    }
+
+    .btn {
+        margin-top: 5em;
+    }
+}
