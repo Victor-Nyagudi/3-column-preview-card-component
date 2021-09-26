@@ -24,6 +24,7 @@ body {
     margin: 0;
     font-weight: 400;
     color: var(--transparent-white);
+    background-color: var(--very-light-gray);
 }
 
 h1,
