@@ -1,0 +1,88 @@
+@import './config';
+
+body {
+    font-family: $primary-font;
+    font-weight: getFontWeight('regular');
+    color: getColor('transparent-white');
+
+    background-color: getColor('very-light-gray');
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: $secondary-font;
+    font-weight: getFontWeight('bold');
+    color: getColor('very-light-gray');
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.content {
+    margin: 5em 0;
+
+    .preview-card {
+        padding: 3em;
+
+        &__title {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+        }
+
+        &__text { line-height: 1.7; }
+
+        &--sedans {
+            @extend .preview-card;
+            background-color: getColor('bright-orange');
+            border-radius: $border-radius $border-radius 0 0;
+        }
+
+        &--suvs {
+            @extend .preview-card;
+            background-color: getColor('dark-cyan');
+        }
+
+        &--luxury {
+            @extend .preview-card;
+            background-color: getColor('very-dark-cyan');
+            border-radius: 0 0 $border-radius $border-radius;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background-color: getColor('very-light-gray');
+            
+            border-radius: 32px;
+            border: 2px solid getColor('transparent-white');
+            
+            padding: .75em 2em;
+            margin-top: .8em;
+
+            &:hover {
+                color: inherit;
+                background-color: inherit;
+            }
+
+            &--sedans {
+                @extend .btn;
+                color: getColor('bright-orange');
+            }
+
+            &--suvs {
+                @extend .btn;
+                color: getColor('dark-cyan');
+            }
+
+            &--luxury {
+                @extend .btn;
+                color: getColor('very-dark-cyan');
+            }
+        }
+    }
+}
+
+@import './responsive';

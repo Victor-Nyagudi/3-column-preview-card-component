@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+$primary-font: 'Lexend Deca', sans-serif;
+$secondary-font: 'Big Shoulders Display', cursive;
+
+$font-weights: (
+    "regular": 400,
+    "bold": 700
+);
+
+$colors : (
+    "bright-orange": hsl(31, 77%, 52%),
+    "dark-cyan": hsl(184, 100%, 22%),
+    "very-dark-cyan": hsl(179, 100%, 13%),
+
+    // paragraphs
+    "transparent-white": hsla(0, 0%, 100%, 0.75),
+
+    // backgrounds, headings, titles
+    "very-light-gray": hsl(0, 0%, 95%)
+);
+
+$border-radius: 8px;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.screen-reader-only {
+    position: absolute;
+    left: -10000px;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+@function getColor($color) {
+    @return map-get($map: $colors, $key: $color);
+}
+
+@function getFontWeight($weight) {
+    @return map-get($map: $font-weights, $key: $weight);
+}
+
+@mixin media-lg {
+    @media (min-width: 860px) {
+        @content;
+    }
+}
