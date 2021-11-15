@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.screen-reader-only {
+  position: absolute;
+  left: -10000px;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+  background-color: #f2f2f2;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  color: #f2f2f2;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.content {
+  margin: 5em 0;
+}
+
+.content .preview-card, .content .preview-card--sedans, .content .preview-card--suvs, .content .preview-card--luxury {
+  padding: 3em;
+}
+
+.content .preview-card__title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.content .preview-card__text {
+  line-height: 1.7;
+}
+
+.content .preview-card--sedans {
+  background-color: #e38826;
+  border-radius: 8px 8px 0 0;
+}
+
+.content .preview-card--suvs {
+  background-color: #006970;
+}
+
+.content .preview-card--luxury {
+  background-color: #004241;
+  border-radius: 0 0 8px 8px;
+}
+
+.content .preview-card .btn, .content .preview-card--sedans .btn, .content .preview-card--suvs .btn, .content .preview-card--luxury .btn, .content .preview-card .btn--sedans, .content .preview-card--sedans .btn--sedans, .content .preview-card--suvs .btn--sedans, .content .preview-card--luxury .btn--sedans, .content .preview-card .btn--suvs, .content .preview-card--sedans .btn--suvs, .content .preview-card--suvs .btn--suvs, .content .preview-card--luxury .btn--suvs, .content .preview-card .btn--luxury, .content .preview-card--sedans .btn--luxury, .content .preview-card--suvs .btn--luxury, .content .preview-card--luxury .btn--luxury {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #f2f2f2;
+  border-radius: 32px;
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  padding: .75em 2em;
+  margin-top: .8em;
+}
+
+.content .preview-card .btn:hover, .content .preview-card--sedans .btn:hover, .content .preview-card--suvs .btn:hover, .content .preview-card--luxury .btn:hover, .content .preview-card .btn--sedans:hover, .content .preview-card--sedans .btn--sedans:hover, .content .preview-card--suvs .btn--sedans:hover, .content .preview-card--luxury .btn--sedans:hover, .content .preview-card .btn--suvs:hover, .content .preview-card--sedans .btn--suvs:hover, .content .preview-card--suvs .btn--suvs:hover, .content .preview-card--luxury .btn--suvs:hover, .content .preview-card .btn--luxury:hover, .content .preview-card--sedans .btn--luxury:hover, .content .preview-card--suvs .btn--luxury:hover, .content .preview-card--luxury .btn--luxury:hover {
+  color: inherit;
+  background-color: inherit;
+}
+
+.content .preview-card .btn--sedans, .content .preview-card--sedans .btn--sedans, .content .preview-card--suvs .btn--sedans, .content .preview-card--luxury .btn--sedans {
+  color: #e38826;
+}
+
+.content .preview-card .btn--suvs, .content .preview-card--sedans .btn--suvs, .content .preview-card--suvs .btn--suvs, .content .preview-card--luxury .btn--suvs {
+  color: #006970;
+}
+
+.content .preview-card .btn--luxury, .content .preview-card--sedans .btn--luxury, .content .preview-card--suvs .btn--luxury, .content .preview-card--luxury .btn--luxury {
+  color: #004241;
+}
+
+@media (min-width: 860px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100vh;
+  }
+  .container {
+    max-width: 1026px;
+  }
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .content {
+    margin: 0;
+  }
+  .content .preview-card--sedans {
+    border-radius: 8px 0 0 8px;
+  }
+  .content .preview-card--luxury {
+    border-radius: 0 8px 8px 0;
+  }
+  .btn, .content .preview-card .btn--sedans, .content .preview-card--sedans .btn--sedans, .content .preview-card--suvs .btn--sedans, .content .preview-card--luxury .btn--sedans, .content .preview-card .btn--suvs, .content .preview-card--sedans .btn--suvs, .content .preview-card--suvs .btn--suvs, .content .preview-card--luxury .btn--suvs, .content .preview-card .btn--luxury, .content .preview-card--sedans .btn--luxury, .content .preview-card--suvs .btn--luxury, .content .preview-card--luxury .btn--luxury {
+    margin-top: 5em;
+  }
+}
+/*# sourceMappingURL=main.css.map */

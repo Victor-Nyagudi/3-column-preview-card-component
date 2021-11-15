@@ -1,0 +1,25 @@
+@include media-lg {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        height: 100vh;       
+    }
+
+    .container { max-width: 1026px; }
+
+    .row { display: flex; }
+
+    .content { 
+        margin: 0; 
+    
+        .preview-card {
+            &--sedans { border-radius: $border-radius 0 0 $border-radius; }
+
+            &--luxury { border-radius: 0 $border-radius $border-radius 0; }
+        }
+    }
+
+    .btn { margin-top: 5em; }
+}
