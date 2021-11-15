@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshots/3-column-preview-card-fullscreen.png)
+![](./dist/screenshots/3-column-preview-card-fullscreen.png)
 
 I've included 4 screenshots in the `/screenshots` folder: mobile, tablet, desktop, and fullscreen.
 
@@ -36,8 +36,8 @@ I've included 4 screenshots in the `/screenshots` folder: mobile, tablet, deskto
 
 I'll update this README once these links are ready.
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/mobilefirst-solution-using-bem-and-flexbox-ARJyOY6_U)
+- [Live Site URL](https://victor-nyagudi.github.io/3-column-preview-card-component/)
 
 ## My process
 
