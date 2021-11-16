@@ -47,7 +47,7 @@ came next then worked my way up to the desktop version.
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- SCSS
 - Flexbox
 - Mobile-first workflow
 
